@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -26,11 +27,51 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'Young Developer',
+                'Flutter Developer',
                 style: TextStyle(
                   fontFamily: 'SourceSansPro',
-                  color: Colors.white,
-                  fontSize: 35.0,
+                  color: Colors.teal.shade100,
+                  fontSize: 20.0,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+
+                child: ListTile(
+                  leading: Icon(
+                      Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+977-9860162701',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+
+                child: ListTile(
+                  leading: Icon(
+                      Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'padamghimire75@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0,
+                    ),
+                  ),
                 ),
               ),
             ],
@@ -40,4 +81,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
